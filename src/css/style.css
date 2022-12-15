@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:wght@300;400;500;600;700;800&family=Public+Sans:wght@300;400;800&family=Roboto:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    background: url(../imagens/fundo-site.png) center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 60px;
+}
+
+.cabecalho .pokebola{
+    width: 25px;
+    height: 25px;
+}
+
+.cabecalho .titulo{
+    color: #f1ecff;
+}
+
+.pokemon-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.lista-pokemons {
+    width: 310px;
+    height: 520px;
+}
+.btn-seta{
+    background-color: #f1ecff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar{
+    transform: rotate(180deg);
+}
+
+.btn-seta:hover{
+    background-color: #8351fe;
+}
+
+.lista-pokemons .cartao{
+    opacity: 0;
+    background-color: antiquewhite;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    position: absolute;
+}
+
+.lista-pokemons .cartao.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
