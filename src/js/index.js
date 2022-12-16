@@ -21,10 +21,3 @@ setaVoltar.addEventListener('click', function(){
     cartaoAtual--
     mostrarCartoes()
 })
-
-// function mostrarOuEsconderSetas(){
-//     const chegouNoUltimoCartao = cartaoAtual === cartoes.length - 1;
-//     if(chegouNoUltimoCartao){
-//         set
-//     }
-// }
